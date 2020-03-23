@@ -446,6 +446,11 @@ class FilesPage extends FilesPageBasic {
 		return $newFileIcon->isVisible();
 	}
 
+	/**
+	 * Closes the federated Share dialog
+	 *
+	 * @return bool
+	 */
 	public function closeFederationDialog() {
 		$closeIcon = $this->find("xpath", $this->closeOCDialogXpath);
 		$this->assertElementNotNull(
