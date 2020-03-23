@@ -455,6 +455,5 @@ class FilesPage extends FilesPageBasic {
 			"could not find OC-dialog close icon."
 		);
 		$closeIcon->click();
-
 	}
 }

@@ -135,7 +135,10 @@ class SharedWithYouPage extends FilesPageBasic {
 		}
 	}
 
-	public function acceptPendingShare(){
+	/**
+	 * @return void
+	 */
+	public function acceptPendingShare() {
 		$acceptShareElement = $this->find("xpath", $this->acceptPendingFederatedXpath);
 		$this->assertElementNotNull(
 			$acceptShareElement,

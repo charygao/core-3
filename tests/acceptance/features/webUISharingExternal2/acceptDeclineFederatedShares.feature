@@ -91,8 +91,8 @@ Feature: Federation Sharing - sharing with users on other cloud storages
   Scenario: Local user accepts a pending federated share on the webUI
     Given user "user1" from server "REMOTE" has shared "/lorem.txt" with user "user1" from server "LOCAL"
     When the user browses to the shared-with-you page
-    And the user closes federation share dialog
-    And the user accepts the pending remote shares using the webUI
+    And the user closes the federation sharing dialog
+    And the user accepts the pending remote share using the webUI
     Then file "lorem (2).txt" should be listed in the shared-with-you page on the webUI
 
   Scenario: Federated share from Local user to remote user
